@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap plugin -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="icon" href="img/favicon.ico">
+    <title>Communique</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light bg-light navbar-expand-md">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand">
+                <img src="img/default-monochrome.svg" height="50px" width="120px" class="d-inline-block align-top"
+                    alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <form class="form-inline my-auto ml-auto">
+                    <input class="form-control mr-2" type="search" placeholder="Search" id="searchBar">
+                    <button class="btn btn-outline-primary my-2 my-sm-0 mr-5" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="#">
+                            <span class="fa fa-user-circle fa-lg"></span> Profile
+                        </a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" data-toggle="modal" href="#loginModal">
+                            <span class="fa fa-sign-in fa-lg"></span> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar navbar-light bg-light navbar-expand mt-1">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mr-sm-5 mr-4">
+                    <a class="nav-link" href="./index.html">
+                        <span class="fa fa-home fa-lg"></span> <span class="d-none d-sm-inline">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item mr-sm-5 mr-4">
+                    <a class="nav-link" href="./favourite.html">
+                        <span class="fa fa-heart fa-lg"></span> <span class="d-none d-sm-inline">Favourite</span>
+                    </a>
+                </li>
+                <li class="nav-item mr-sm-5 mr-4">
+                    <a class="nav-link active" href="#">
+                        <span class="fa fa-list fa-lg"></span> <span class="d-none d-sm-inline">Categories</span>
+                    </a>
+                </li>
+                <li class="nav-item mr-sm-5 mr-4">
+                    <a class="nav-link" href="./authors.html">
+                        <span class="fa fa-user fa-lg"></span> <span class="d-none d-sm-inline">Author</span>
+                    </a>
+                </li>
+                <li class="nav-item mr-sm-5 mr-4">
+                    <a class="nav-link" href="#">
+                        <span class="fa fa-edit fa-lg"></span> <span class="d-none d-sm-inline">Publish</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+
+                        <div class="form-group row">
+                            <label for="emailInp" class="col-sm-2 col-form-label">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" id="emailInp" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="passwordInp" class="col-sm-2 col-form-label">Password:</label>
+                            <div class="col-sm-10">
+                                <input type="password" id="passwordInp" class="form-control" placeholder="Password"
+                                    minlength="8" maxlength="20" required>
+                                <small id="passwordHelpBlock" class="form-text text-muted">
+                                    Your password must be 8-20 characters long, contain letters and numbers, and must
+                                    not contain spaces, special characters, or emoji.
+                                </small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary"><span class="fa fa-sign-in fa-lg"></span>
+                            Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row text-center">
+            <h2>Add the topics that interests you</h2>
+        </div>
+        <div class="row row-content">
+            <div class="col-sm-3">
+                <div class="card card-widget">
+                    <img class="card-img-top" height="180px" src="./img/categories/fitness.jpeg" alt="Fitness image">
+                    <h4 class="card-title p-3 text-center">Fitness</h4>                    
+                </div>
+            </div>
+            <div class="col-sm-3 my-3 my-sm-0">
+                <div class="card card-widget">
+                    <img class="card-img-top" height="180px" src="./img/categories/lifestyle.jpeg" alt="Lifestyle image">
+                    <h4 class="card-title p-3 text-center">Lifestyle</h4>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card card-widget">
+                    <img class="card-img-top" height="180px" src="./img/categories/sports.jpeg" alt="Sports image">
+                    <h4 class="card-title p-3 text-center">Sports</h4>
+                </div>
+            </div>
+            <div class="col-sm-3 my-3 my-sm-0">
+                <div class="card card-widget">
+                    <img class="card-img-top" height="180px" src="./img/categories/art.jpeg" alt="Art image">
+                    <h4 class="card-title p-3 text-center">Art</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

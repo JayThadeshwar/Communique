@@ -1,0 +1,61 @@
+#searchBar {
+    width: 300px;
+}
+
+.row-content {
+    padding: 50px 0px;
+}
+
+.card-text {
+    white-space: normal;
+    overflow: hidden;
+    max-height: 100px;
+}
+
+a.custom-card, a.custom-card:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-widget:hover{
+    box-shadow: 3px 3px 15px rgb(150, 169, 175);
+    position: relative;
+    animation: cardhover 0.5s ease-out 1 forwards;
+}
+
+.card-widget{
+    animation: cardhoverout 0.5s ;
+}
+
+@keyframes cardhover {
+    from {bottom: 0px;}
+    to {bottom: 3%;}
+}
+
+@keyframes cardhoverout {
+    from {bottom: 3%;}
+    to {bottom: 0px;}
+}
+
+.fav-article{
+    margin: 15px auto;
+    padding: 25px 0px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px grey;
+}
+
+.fav-article:hover{
+    box-shadow: 3px 3px 15px rgb(150, 169, 175);
+}
+
+.fav-article > .thumbnail{
+    height: 150px; 
+    width: 120px;
+    margin: 5px auto;
+}
+
+.article-text{
+    white-space: normal;
+    overflow: hidden;
+    max-height: 50px;
+}
